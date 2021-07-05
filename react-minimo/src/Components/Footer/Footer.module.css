@@ -1,4 +1,39 @@
 .footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     grid-area: ft;
     background-color: rgb(230,230,230);
-  }
+}
+
+.footer a{
+  text-decoration: none;
+  padding: 10px;
+}
+
+.footer a:hover{
+  text-decoration: underline;
+}
+
+.terms{
+  margin: 0 120px;
+  padding: 20px;
+  
+}
+
+.terms a{
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+}
+
+.socialMedia{
+  margin: 0 120px;
+  padding: 20px;
+  text-align: right;
+}
+
+.socialMedia a img{
+  width: 20px;
+  height: 20px;
+  color: rgb(98,98,98);
+}
+

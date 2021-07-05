@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Playfair+Display&display=swap');
 
+body{
+  font-family: 'Playfair Display', serif;
+}
+
 .app-wrapper{
   display: grid;
   max-width: 1100px;
