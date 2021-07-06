@@ -11,15 +11,18 @@ body{
   height: 100vh;
   grid-template-areas: 
   "hd hd hd"
-  "main main main"
+  "bg bg bg"
+  "c c c"
   "ft ft ft";
 
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 60px 1fr 60px;
+  grid-template-rows: 60px 1fr 1fr 60px;
   
 }
-
+.bg{
+  grid-area: bg;
+}
 .app-wrapper-content{
-  grid-area: main;
+  grid-area: c;
   background-color: rgb(255,255,255);
 }
