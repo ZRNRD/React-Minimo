@@ -1,6 +1,6 @@
 import './App.css';
 import bg from "./main_page.png"
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
 import HomePage from './Components/HomePage/HomePage';
@@ -23,6 +23,10 @@ function App() {
             <Route path="/photodiary" render={() => <Photodiary /> } />
             <Route path="/music" render={() => <Music /> } />
             <Route path="/travel" render={() => <Travel /> } />
+
+            <Redirect exact from="/" to="/homePage" /> {/* Редирект на страницу профиля по умолчанию при заходе на сайт */}
+            <Redirect exact from="/First-React-project" to="/homePage" /> {/* Редирект на страницу профиля по умолчанию при заходе на сайт */}
+            <Route path="*" render={() => <div>404 СТРАНИЦА НЕ НАЙДЕНА</div>} />
           </Switch>
         </div>
 

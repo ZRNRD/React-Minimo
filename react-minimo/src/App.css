@@ -21,6 +21,7 @@ body{
 }
 .bg{
   grid-area: bg;
+  margin-top: 25px;
 }
 .app-wrapper-content{
   grid-area: c;
